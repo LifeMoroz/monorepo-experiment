@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:99e9117739749c090eacdf0644bc92014f2ce0af0cac35d00256e9b33969fc97"
+content_hash = "sha256:a8bd408870f563003ac63c6e7618d8d26c2a7dc548886e4683afb22da2d08a8e"
 
 [[metadata.targets]]
 requires_python = "==3.11.*"
@@ -116,12 +116,15 @@ requires_python = ">=3.11"
 path = "../../packages/pkg-database"
 summary = "Default template for PDM package"
 groups = ["default"]
+dependencies = [
+    "pkg-settings @ file:///home/rgalimov/PycharmProjects/TapV2/monorepo-experiment/packages/pkg-database/../../packages/pkg-settings",
+]
 
 [[package]]
 name = "pkg-settings"
 version = "0.1.0"
 requires_python = ">=3.11"
-path = "../../packages/pkg-settings"
+path = "/home/rgalimov/PycharmProjects/TapV2/monorepo-experiment/packages/pkg-database/../../packages/pkg-settings"
 summary = "Default template for PDM package"
 groups = ["default"]
 dependencies = [
